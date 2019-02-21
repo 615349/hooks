@@ -29,7 +29,7 @@ function Home() {
 
 	return (
 		<>
-			<input type="text" onChange={handleOnChange} />
+			<input type="text" value={query} onChange={handleOnChange} />
 			{ isError && <h1> something is wrong </h1> }
 			{
 	      !isError && <ul>

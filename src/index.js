@@ -10,7 +10,7 @@ const App = () => (
     <Suspense fallback={<h1>loading...</h1>}>
       <Switch>
         <Route exact path='/' render={() => <Home />} />
-        <Route path='/about' render={() => <About />} />
+        <Route path='/about' render={() => <About title="about page view" />} />
       </Switch>
     </Suspense>
   </BrowserRouter>
